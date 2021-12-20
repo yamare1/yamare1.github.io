@@ -1,0 +1,33 @@
+body {
+    background-color: orange;
+    margin: 5;
+    height: 100vh;
+    /* background-image: linear-gradient(45deg, cyan, lightcyan) */
+    background-image: url(https://media0.giphy.com/media/w1z2ilkWZagRG/200.gif);
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(255, 115, 0);
+    font-family: fantasy;
+  }
+  
+  #calculator {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100px 200px;
+    column-gap: 10px;
+    row-gap: 30px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    background-color: rgba(22, 48, 107, 0.76);
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: impact;
+    font-size: 30px;
+    transform: scale(0.9) translate(-25%, -25%);
+    transition: background-color 3s;
+  }
