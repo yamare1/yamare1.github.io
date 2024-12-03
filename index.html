@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonathan Amare | Portfolio</title>
+    <meta name="description" content="Yonathan Amare's professional resume and portfolio showcasing experience in machine learning, software engineering, and data analysis.">
+    
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header class="bg-gray-800 text-white fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">Yonathan Amare</div>
+            <nav>
+                <a href="#hero" class="mx-2 hover:text-gray-400">Home</a>
+                <a href="#objective" class="mx-2 hover:text-gray-400">Objective</a>
+                <a href="#education" class="mx-2 hover:text-gray-400">Education</a>
+                <a href="#experience" class="mx-2 hover:text-gray-400">Experience</a>
+                <a href="#projects" class="mx-2 hover:text-gray-400">Projects</a>
+                <a href="#skills" class="mx-2 hover:text-gray-400">Skills</a>
+                <a href="#contact" class="mx-2 hover:text-gray-400">Contact</a>
+                <button id="theme-toggle" class="ml-4 focus:outline-none">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="flex items-center justify-center h-screen bg-cover bg-center" style="background-image: url('assets/images/hero-bg.jpg');" data-aos="fade-in">
+        <div class="text-center text-white bg-gray-900 bg-opacity-50 p-10 rounded">
+            <h1 class="text-5xl font-bold">Yonathan Amare</h1>
+            <p class="mt-4 text-xl">Aspiring ML Researcher</p>
+            <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Objective Section -->
+    <section id="objective" class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6">Objective</h2>
+            <p class="text-lg">
+                Actively seeking research opportunities in machine learning to address real-world challenges in industry and academia. I aim to contribute to innovative projects that advance AI-driven solutions while expanding my expertise in computer science, statistics, and machine learning.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-100" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-2xl font-bold">Bachelor of Science in Information Systems & Business Analytics</h3>
+                <p class="text-lg">Loyola Marymount University, Aug 2020 – May 2024, Los Angeles, CA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6">Professional Experience</h2>
+            
+            <!-- Software Engineer at All-Win Rx -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold">Software Engineer</h3>
+                <p class="text-lg">All-Win Rx, Sep 2023 – May 2024, Los Angeles, CA</p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Developed a robust Selenium WebDriver to automate data extraction for over 1000 missing entries from pharmacy websites, enhancing database accuracy and efficiency. Utilized Python for scripting and integration with MySQL databases.</li>
+                    <li>Spearheaded the storage and organization of large datasets in a cloud-hosted SQL database, enabling dynamic data analysis and strategic decision-making for pharmacy cost management. Managed workflows and project deadlines through Confluence and Jira.</li>
+                    <li>Collaborated on a project providing small pharmacies with tools to analyze discounts and profits. Delivered a solution involving web scraping, data analysis, and database management, enhancing their bargaining power under tight deadlines.</li>
+                </ul>
+            </div>
+
+            <!-- Classroom Support Technician at LMU Information Technology Services -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold">Classroom Support Technician</h3>
+                <p class="text-lg">LMU Information Technology Services, Aug 2022 – May 2024, Los Angeles, CA</p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Provided real-time technical support for enterprise-level audio/visual technology, including Crestron systems, Macs, PCs, and networking devices, ensuring seamless classroom operations for faculty members.</li>
+                    <li>Handled incoming calls and provided over-the-phone troubleshooting to quickly resolve technical issues for classroom setups.</li>
+                    <li>Troubleshot and resolved technical issues efficiently, maintaining smooth operations across multiple classrooms.</li>
+                    <li>Documented and tracked issues using ServiceNow, ensuring accurate reporting and timely resolution of technical problems.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+
+            <!-- Filter Buttons -->
+            <div class="mb-6 flex flex-wrap gap-2">
+                <button class="filter-btn bg-blue-600 text-white px-4 py-2 rounded" data-filter="all">All</button>
+                <button class="filter-btn bg-gray-600 text-white px-4 py-2 rounded" data-filter="web">Web Development</button>
+                <button class="filter-btn bg-gray-600 text-white px-4 py-2 rounded" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn bg-gray-600 text-white px-4 py-2 rounded" data-filter="database">Database</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cloud Resume Challenge Website -->
+                <div class="project-item web">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Cloud Resume Challenge Website</h3>
+                        <p class="mb-4">Hosted a static resume website on AWS, using S3, CloudFront, DynamoDB, and Lambda for security, optimization, and performance. Implemented a live visitor counter with Python Lambda interacting with a NoSQL database.</p>
+                        <a href="https://github.com/yamare1/cloud-resume" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Winning LMU Datathon Project -->
+                <div class="project-item machine-learning">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Winning LMU Datathon Project</h3>
+                        <p class="mb-4">Maximizing EPA Awards for Minority and Women-Owned Businesses by utilizing Python libraries for data analysis and machine learning models to identify key variables impacting EPA contract awards.</p>
+                        <a href="https://github.com/yamare1/datathon2024" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Subqueries in MySQL -->
+                <div class="project-item database">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Subqueries in MySQL</h3>
+                        <p class="mb-4">Developed complex SQL queries to analyze a veterinary hospital database, utilizing subqueries, joins, and aggregate functions to extract operational insights.</p>
+                        <a href="https://github.com/yamare1/veterinary-hospital" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- ISBA 4790 Machine Learning Assignment -->
+                <div class="project-item machine-learning">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Machine Learning Cumulative Assignment</h3>
+                        <p class="mb-4">Worked on data ingestion, cleaning, and preparation, followed by exploration and visualization to develop machine learning models predicting profitability using regression analysis.</p>
+                        <a href="https://github.com/yamare1/ISBA4790-Cumulative-Assignment-1" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6">Certifications</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Datacamp - Cluster Analysis in Python, Introduction to Linear Modeling in Python, Linear Classifiers in Python, Machine Learning with Tree-Based Models in Python, Exploratory Data Analysis in Python, Introduction to Data Science in Python, Data Manipulation with Pandas, Joining Data with Pandas.</li>
+                <li>DeepLearning.AI - Supervised Machine Learning: Regression and Classification Skills.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+            <!-- Skills Chart -->
+            <canvas id="skillsChart" width="400" height="400"></canvas>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+            <form id="contact-form" class="max-w-lg mx-auto" action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg mb-2">Email:</label>
+                    <input type="email" id="email" name="_replyto" class="w-full p-3 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="w-full p-3 border rounded" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 Yonathan Amare. All rights reserved.</p>
+        <div class="mt-2">
+            <a href="mailto:your.email@example.com" class="mx-2 hover:text-gray-400"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/yonathanamare/" target="_blank" class="mx-2 hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yamare1" target="_blank" class="mx-2 hover:text-gray-400"><i class="fab fa-github"></i></a>
+            <a href="https://yonathanamare.com/" target="_blank" class="mx-2 hover:text-gray-400"><i class="fas fa-globe"></i></a>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

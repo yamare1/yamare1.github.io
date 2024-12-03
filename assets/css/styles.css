@@ -1,0 +1,85 @@
+/* Loading Spinner Styles */
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #333;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Dark Mode Styles */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --header-bg: #333333;
+  --header-text: #ffffff;
+  --footer-bg: #333333;
+  --footer-text: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --header-bg: #1f1f1f;
+  --header-text: #e0e0e0;
+  --footer-bg: #1f1f1f;
+  --footer-text: #e0e0e0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+/* Projects Filtering */
+.filter-btn {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #4a5568; /* Tailwind's gray-700 */
+}
+
+.projects-grid .project-item {
+  display: none; /* Hidden by default, shown via JS */
+}
+
+.projects-grid .project-item.active {
+  display: block;
+}
+
+/* Skills Chart Responsive */
+@media (max-width: 768px) {
+  #skillsChart {
+      max-width: 100%;
+      height: auto;
+  }
+}
